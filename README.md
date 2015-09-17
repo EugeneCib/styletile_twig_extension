@@ -1,7 +1,12 @@
 # styletile_twig_extension
 Twig extension for rendering styletile from twig files with test data.
 
-# Usage
+## About
+Extension provides method which will return styletile resulting object with array of rendered html and navigation.
+
+
+## Usage
+### Add to project
 Require php file
 ```
 require_once('styletile-twig-extension/styletile-twig-extension.php');
@@ -12,7 +17,9 @@ Add extension to twig. Pass folder which you want to include in style tile
 $twig->addExtension( new TwigStyleTile\StyleTile_Twig_Extension('/partials') );
 ```
 
-Extension provides method which will return styletile resulting object with array of rendered html and navigation
+### Outputing styletile
+Use twig file to output styletile result data. This way you can customize look of styletile.
+
 Call it in twig file (styletile.twig) and pass in current file path and url, where you browse style tile.
 URL parameter is used to generate navigation links by adding to it GET parameter _styletile:
 ```
@@ -28,7 +35,7 @@ Returned object has two properties:
   *   title - template file name
   *   items - array of similar nav objects (if folder)
 
-Outputing HTML
+#### Output HTML
 ```
 {% for html_template in _style_tile.html %}
 <div>
@@ -45,7 +52,7 @@ Outputing HTML
 {% endfor %}
 ```
 
-Outputing Navigation
+#### Output Navigation
 ```
 <ul>
     {% for nav in _style_tile.nav %}
