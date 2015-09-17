@@ -2,7 +2,7 @@
 Twig extension for rendering styletile from twig files with test data.
 
 ## About
-Extension provides method which will return styletile resulting object with array of rendered html and navigation.
+Extension provides method which will return styletile resulting object with array of rendered html and navigation data (between twig files and folders).
 
 
 ## Usage
