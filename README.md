@@ -28,12 +28,12 @@ style_tile('pages/styletile/styletile.twig', '/styletile')
 ```
 Returned object has two properties:
 1. html - rendering result object: 
-  *   html - contains rendered templates html
-  *   name - template file name
+  *  html - contains rendered templates html
+  *  name - template file name
 2. nav - navigation data array of objects which consists of:
-  *   link - link to folder or individual twig file. for exaple styletile/?_styletile=folder,test.twig, styletile/?_styletile=folder
-  *   title - template file name
-  *   items - array of similar nav objects (if folder)
+  *  link - link to folder or individual twig file. for exaple styletile/?_styletile=folder,test.twig, styletile/?_styletile=folder
+  *  title - template file name
+  *  items - array of similar nav objects (if folder)
 
 #### Output HTML
 ```
