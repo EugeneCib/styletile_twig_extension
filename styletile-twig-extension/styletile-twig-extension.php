@@ -240,7 +240,7 @@ class StyleTileCompiler
 
     private function render_template($template_file, $template_path)
     {
-        $template_name = basename($template_file);
+        $template_name = explode('.', $template_file)[0];
         $data_file = $this->template_dir . self::DIR_DELIMITER . $template_name . '.json';
 
         $data = $this->get_json_data($data_file);
